@@ -25,7 +25,7 @@ require 'Post.php';
                 <h2><a href="single.php?postId=<?= htmlspecialchars($data['id']);?>"><?= htmlspecialchars($data['title']);?></a></h2>
             <h3><?= htmlspecialchars($data['chapo']);?></h3>
             <p><?= htmlspecialchars($data['content']);?></p>
-            <p><?= htmlspecialchars($data['user_id']);?></p>
+            <p><?= htmlspecialchars($data['username']);?></p>
             <p>Créé le : <?= htmlspecialchars($data['post_date']);?></p>
             </div>
         <br>

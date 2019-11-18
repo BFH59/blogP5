@@ -27,7 +27,7 @@ require 'comment.php';
             <h2><?= htmlspecialchars($data['title']);?></h2>
             <h3><?= htmlspecialchars($data['chapo']);?></h3>
             <p><?= htmlspecialchars($data['content']);?></p>
-            <p><?= htmlspecialchars($data['user_id']);?></p>
+            <p><?= htmlspecialchars($data['username']);?></p>
             <p>Créé le : <?= htmlspecialchars($data['post_date']);?></p>
         </div>
     <?php
@@ -42,7 +42,7 @@ require 'comment.php';
         while ($datas = $comments->fetch())
         {
             ?>
-        <h4><?= htmlspecialchars($datas['user_id']);?></h4>
+        <h4><?= htmlspecialchars($datas['username']);?></h4>
         <p><?= htmlspecialchars($datas['content']);?></p>
         <p>Posté le : <?= htmlspecialchars($datas['comment_date']);?></p>
         <?php

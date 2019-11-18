@@ -5,7 +5,7 @@ class Post extends Database
 {
     public function getPosts()
     {
-        $sql = 'SELECT id, user_id, title, chapo, content, post_date FROM post ORDER BY id DESC';
+        $sql = 'SELECT post.id, user.username, post.title, post.chapo, post.content, post.post_date FROM post INNER JOIN `user` ON user.id = post.user_id ORDER BY post.id desc ';
         $result = $this->sql($sql);
         return $result;
     }
