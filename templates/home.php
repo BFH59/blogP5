@@ -1,8 +1,3 @@
-<?php
-require '../config/Autoloader.php';
-\App\config\Autoloader::register();
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,7 +17,7 @@ require '../config/Autoloader.php';
         {
          ?>
             <div>
-                <h2><a href="single.php?postId=<?= htmlspecialchars($data['id']);?>"><?= htmlspecialchars($data['title']);?></a></h2>
+                <h2><a href="../public/index.php?route=post&postId=<?= htmlspecialchars($data['id']);?>"><?= htmlspecialchars($data['title']);?></a></h2>
             <h3><?= htmlspecialchars($data['chapo']);?></h3>
             <p><?= htmlspecialchars($data['content']);?></p>
             <p><?= htmlspecialchars($data['username']);?></p>
