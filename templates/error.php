@@ -1,3 +1,6 @@
-<?php
+<?php $this->title = "Erreur"?>
 
-echo 'Erreur';
+
+<h1>Erreur</h1>
+<p>une erreur est survenue</p>
+

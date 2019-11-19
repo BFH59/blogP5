@@ -30,6 +30,14 @@ class PostManager extends DAO
         }
     }
 
+    public function addPost($post)
+    {
+        extract($post);
+        $sql = 'INSERT INTO post (user_id, title, chapo, content,post_date)
+                VALUES (?,?,?,?,NOW())';
+        $this->sql($sql, [$user_id, $title, $chapo, $content]);
+    }
+
     private function buildObject(array $row)
     {
         $post = new Post();
