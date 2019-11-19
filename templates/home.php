@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Blog Projet 5</title>
-</head>
+<?php
+$this->title = 'Accueil';
+?>
 
-<body>
-    <div>
         <h1>Mon Blog du projet 5</h1>
         <p>en construction</p>
 
@@ -26,6 +21,3 @@
         }
 
         ?>
-    </div>
-</body>
-</html>
