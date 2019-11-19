@@ -11,20 +11,20 @@
         <p>en construction</p>
 
         <?php
-        while($data = $posts->fetch())
+        foreach ($posts as $post)
         {
          ?>
             <div>
-                <h2><a href="../public/index.php?route=post&postId=<?= htmlspecialchars($data['id']);?>"><?= htmlspecialchars($data['title']);?></a></h2>
-            <h3><?= htmlspecialchars($data['chapo']);?></h3>
-            <p><?= htmlspecialchars($data['content']);?></p>
-            <p><?= htmlspecialchars($data['username']);?></p>
-            <p>Créé le : <?= htmlspecialchars($data['post_date']);?></p>
+                <h2><a href="../public/index.php?route=post&postId=<?= htmlspecialchars($post->getId());?>"><?= htmlspecialchars($post->getTitle());?></a></h2>
+            <h3><?= htmlspecialchars($post->getChapo());?></h3>
+            <p><?= htmlspecialchars($post->getContent());?></p>
+            <p><?= htmlspecialchars($post->getUsername());?></p>
+            <p>Créé le : <?= htmlspecialchars($post->getPostDate());?></p>
             </div>
         <br>
         <?php
         }
-        $posts->closeCursor();
+
         ?>
     </div>
 </body>
