@@ -11,8 +11,6 @@
     <p>en construction</p>
 
     <?php
-    $post = new \App\src\manager\PostManager();
-    $post = $post->getPost($_GET['postId']);
     $data = $post->fetch();
     ?>
 
@@ -30,8 +28,6 @@
     <div id="comments" class="text-left" style="margin-left: 50px;">
         <h3>Commentaires de l'article</h3>
         <?php
-        $comment = new \App\src\manager\CommentManager();
-        $comments = $comment->getCommentsFromPost($_GET['postId']);
         while ($datas = $comments->fetch())
         {
             ?>

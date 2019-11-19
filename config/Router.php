@@ -2,28 +2,40 @@
 
 namespace App\config;
 
+use App\src\controller\ErrorController;
+use App\src\controller\FrontController;
+
 class Router
 {
+    private $frontController;
+    private $errorController;
+
+    public function __construct()
+    {
+        $this->frontController = new FrontController();
+        $this->errorController = new ErrorController();
+    }
+
     public function run()
     {
         try{
             if(isset($_GET['route']))
             {
                 if($_GET['route'] === "post"){
-                    $postId = $_GET['postId'];
-                    require '../templates/single.php';
+                    $this->frontController->single($_GET['postId']);
+
                 }
                 else{
-                    echo 'page inconnue';
+                    $this->errorController->unknown();
                 }
             }
             else{
-                require '../templates/home.php';
+                $this->frontController->home();
             }
         }
         catch (Exception $e)
         {
-            echo 'erreur';
+            $this->errorController->error();
         }
     }
 }

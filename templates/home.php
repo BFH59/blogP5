@@ -11,8 +11,6 @@
         <p>en construction</p>
 
         <?php
-        $post = new \App\src\manager\PostManager();
-        $posts = $post->getPosts();
         while($data = $posts->fetch())
         {
          ?>
