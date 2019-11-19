@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b269278d-b696-42be-b349-1bb6369cc0d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/CommentManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/DAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/PostManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574073926300</updated>
-      <workItem from="1574073929681" duration="11173000" />
+      <workItem from="1574073929681" duration="11829000" />
     </task>
     <servers />
   </component>

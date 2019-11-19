@@ -1,6 +1,6 @@
 <?php
-require '../src/manager/DAO.php';
-require '../src/manager/PostManager.php';
+require '../config/Autoloader.php';
+\App\config\Autoloader::register();
 ?>
 
 <!DOCTYPE html>
