@@ -1,7 +1,10 @@
 <?php
 
+namespace App\src\manager;
 
-abstract class Database
+use PDO;
+
+abstract class DAO
 {
     const DB_HOST = 'mysql:host=127.0.0.1:8889;dbname=blogP5;charset=utf8';
     const DB_USER = 'root';

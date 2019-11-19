@@ -1,7 +1,7 @@
 <?php
-require 'Database.php';
-require 'Post.php';
-require 'comment.php';
+require '../src/manager/DAO.php';
+require '../src/manager/PostManager.php';
+require '../src/manager/CommentManager.php';
 
 ?>
 
@@ -18,7 +18,7 @@ require 'comment.php';
     <p>en construction</p>
 
     <?php
-    $post = new Post();
+    $post = new \App\src\manager\PostManager();
     $post = $post->getPost($_GET['postId']);
     $data = $post->fetch();
     ?>
@@ -37,7 +37,7 @@ require 'comment.php';
     <div id="comments" class="text-left" style="margin-left: 50px;">
         <h3>Commentaires de l'article</h3>
         <?php
-        $comment = new Comment();
+        $comment = new \App\src\manager\CommentManager();
         $comments = $comment->getCommentsFromPost($_GET['postId']);
         while ($datas = $comments->fetch())
         {

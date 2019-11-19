@@ -1,7 +1,8 @@
 <?php
 
+namespace App\src\manager;
 
-class Post extends Database
+class PostManager extends DAO
 {
     public function getPosts()
     {
@@ -12,7 +13,7 @@ class Post extends Database
 
     public function getPost($postId)
     {
-        $sql = 'SELECT id, user_id, title, chapo, content,post_date FROM post WHERE id = ?';
+        $sql = 'SELECT post.id, user.username, post.title, post.chapo, post.content,post.post_date FROM post INNER JOIN `user` ON user.id = post.user_id WHERE post.id = ?';
         $result = $this->sql($sql, [$postId]);
         return $result;
     }

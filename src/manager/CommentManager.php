@@ -1,7 +1,8 @@
 <?php
 
+namespace App\src\manager;
 
-class Comment extends Database
+class CommentManager extends DAO
 {
     public function getCommentsFromPost($postId)
     {

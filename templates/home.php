@@ -1,6 +1,6 @@
 <?php
-require 'Database.php';
-require 'Post.php';
+require '../src/manager/DAO.php';
+require '../src/manager/PostManager.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ require 'Post.php';
         <p>en construction</p>
 
         <?php
-        $post = new Post();
+        $post = new \App\src\manager\PostManager();
         $posts = $post->getPosts();
         while($data = $posts->fetch())
         {
