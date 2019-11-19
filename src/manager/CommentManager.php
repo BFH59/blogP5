@@ -8,7 +8,7 @@ class CommentManager extends DAO
 {
     public function getCommentsFromPost($postId)
     {
-        $sql = 'SELECT comment.id, user.username, comment.content, comment.comment_date FROM comment INNER JOIN `user` ON user.id = comment.user_id WHERE post_id = ?';
+        $sql = 'SELECT comment.id, user.username, comment.content, comment.comment_date FROM comment INNER JOIN `user` ON user.id = comment.user_id WHERE post_id = ? AND comment.validated = 1';
         $result = $this->sql($sql,[$postId]);
         $comments = [];
         foreach($result as $row){
