@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b269278d-b696-42be-b349-1bb6369cc0d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/BackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/BackController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ErrorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ErrorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/PostManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/PostManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/error.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/unknown.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/unknown.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574073926300</updated>
-      <workItem from="1574073929681" duration="26492000" />
+      <workItem from="1574073929681" duration="27535000" />
     </task>
     <servers />
   </component>

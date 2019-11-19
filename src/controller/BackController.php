@@ -21,6 +21,8 @@ class BackController
         if(isset($post['submit'])){
             $postManager = new PostManager();
             $postManager->addPost($post);
+            session_start();
+            $_SESSION['addPost'] = 'L\'article a bien été ajouté';
             header('location: ../public/index.php');
         }
         $this->view->render('addPost', [

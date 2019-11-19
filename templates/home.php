@@ -1,10 +1,20 @@
 <?php
+session_start();
+?>
+<?php
 $this->title = 'Accueil';
 ?>
 
 <h1>Mon Blog du projet 5</h1>
 <p>en construction</p>
 
+<?php
+if(isset($_SESSION['addPost'])){
+    echo '<p>'.$_SESSION['addPost'].'<p>';
+    unset($_SESSION['addPost']);
+}
+
+?>
 <a href="../public/index.php?route=addPost">Ajouter un article (test avant partie admin)</a>
         <?php
         foreach ($posts as $post)
