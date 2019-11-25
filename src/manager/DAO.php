@@ -1,11 +1,11 @@
 <?php
 
+namespace App\src\manager;
 
-abstract class Database
+use PDO;
+
+abstract class DAO
 {
-    const DB_HOST = 'mysql:host=127.0.0.1:8889;dbname=blogP5;charset=utf8';
-    const DB_USER = 'root';
-    const DB_PASS = 'root';
 
     private $connection;
 
@@ -21,7 +21,7 @@ abstract class Database
     private function getConnection()
     {
         try{
-            $this->connection = new PDO(self::DB_HOST, self::DB_USER, self::DB_PASS);
+            $this->connection = new PDO(DB_HOST, DB_USER, DB_PASS);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $this->connection;
         }
